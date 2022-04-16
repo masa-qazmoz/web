@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<video id="videoBG" poster="poster.jpg" autoplay muted loop >
+    <source src="vid.mp4" type="video/mp4">
+</video>
+<header>
+    <div class="m">
+        <img src="logo.png" class="logo" width="75">
+        <ul>
+            <li class="l s1"> <a href="#"><span class="icon"><i class="fa fa-home" ></i></span> <span class="text">Home</span> </a> </li>
+            <li class="l "> <a href="#"><span class="icon"><i class="fa fa-film" ></i></span> <span class="text">Moves</span> </a> </li>
+            <li class="l "> <a href="#"><span class="icon"><i class="fa fa-user"></i></span> <span class="text">User</span> </a> </li>
+            <li class="l "> <a href="#"><span class="icon"><i class="fa fa-comments"></i></span> <span class="text">Connect</span> </a> </li>
+            <li class="l "> <a href="#"><span class="icon"><i class="fa fa-star" ></i></span> <span class="text">News</span> </a> </li>
+            <div class="in"></div>
+        </ul>
+    </div>
+    <script>
+        const l=document.querySelectorAll('.l');
+        function activelink(){
+            l.forEach((item) =>
+                item.classList.remove('s1'));
+            this.classList.add('s1')
+        }
+        l.forEach((item) =>
+            item.addEventListener('click',activelink));
+    </script>
+</header>
+<section class ="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p> Tell us what do you think about our website?do you have any Qustions or Feedback?</p>
+    </div>
+    <div class  ="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                <div class="text">
+                    <h3>Instagram</h3>
+                    <p>Follow us  on our page MovieX</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                <div class="text">
+                    <h3>Facebook</h3>
+                    <p>Follow us  on our page MovieX</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>MovieX@gmail.com</p>
+                </div>
+            </div>
+        </div>
+            <div class="ContactForm">
+                <form>
+                    <h2>Talk to Us</h2>
+                    <div class="inputBox">
+                        <input type="text" name=" " required="required">
+                        <span> Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name=" " required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required ="required"></textarea>
+                        <span>Your Message!...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="send!">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+</section>
+</body>
+</html>
